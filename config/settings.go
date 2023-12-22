@@ -10,4 +10,4 @@ const Width int32 = 800
 const Title string = "Conway's Game of Life"
 
 // FPS of the window
-const FPS int32 = 60
+const FPS int32 = 30

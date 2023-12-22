@@ -2,6 +2,8 @@
 
 This is a simple implementation of Conway's Game of Life in Go.
 
+Probably overcomplicated for a simple project.
+
 ## Usage
 
 To build the project, run the following command:
@@ -11,10 +13,7 @@ make build
 
 To run the project, run the following command:
 ```
-make run
+make
 ```
 
-To run the tests, run the following command:
-```
-make test
-```
+Check out [raylib-go](www.github.com/gen2brain/raylib-go) for the dependencies required.
