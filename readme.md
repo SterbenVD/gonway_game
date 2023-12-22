@@ -17,3 +17,9 @@ make
 ```
 
 Check out [raylib-go](www.github.com/gen2brain/raylib-go) for the dependencies required.
+
+## Keybinds
+
+Press *Space* to reset(randomize) the board.
+
+Press *Left Arrow* to decrease the frame rate or *Right Arrow* to increase the frame rate.
