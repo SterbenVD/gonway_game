@@ -10,7 +10,7 @@ const Width int32 = 800
 const Title string = "Conway's Game of Life"
 
 // FPS of the window
-const FPS int32 = 60
+const FPS int32 = 2
 
 // TickRate of the board
-const TickRate int32 = 10
+const Frames_per_Tick int32 = 60

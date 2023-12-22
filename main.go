@@ -13,8 +13,9 @@ func main() {
 	FPS := config.FPS
 	window := api.NewWindow(height, width, FPS, title)
 	board := api.NewBoard(height, width, 10, rl.Black, rl.White)
+	board.Init()
 	window.Run()
-	frames_per_tick := config.FPS / config.TickRate
+	frames_per_tick := config.Frames_per_Tick
 	temp := frames_per_tick
 	for !window.Close() {
 		if temp == 0 {
