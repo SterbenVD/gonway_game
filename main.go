@@ -15,14 +15,17 @@ func main() {
 	board := api.NewBoard(height, width, 10, rl.Black, rl.White)
 	board.Init()
 	window.Run()
-	frames_per_tick := config.Frames_per_Tick
-	temp := frames_per_tick
 	for !window.Close() {
-		if temp == 0 {
-			board.Run()
-			temp = frames_per_tick
+		if rl.IsKeyPressed(rl.KeySpace) {
+			board.Init()
 		}
-		temp--
+		if rl.IsKeyPressedRepeat(rl.KeyRight) {
+			window.ChangeFPS(true)
+		}
+		if rl.IsKeyPressedRepeat(rl.KeyLeft) {
+			window.ChangeFPS(false)
+		}
+		board.Run()
 	}
 	rl.CloseWindow()
 }

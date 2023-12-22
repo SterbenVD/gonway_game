@@ -37,3 +37,19 @@ func (w *Window) Run() {
 func (w *Window) Close() bool {
 	return rl.WindowShouldClose()
 }
+
+// Change the FPS of the window.
+func (w *Window) ChangeFPS(dir bool) {
+	if dir {
+		if w.FPS == 60 {
+			return
+		}
+		w.FPS++
+	} else {
+		if w.FPS == 1 {
+			return
+		}
+		w.FPS--
+	}
+	rl.SetTargetFPS(w.FPS)
+}
